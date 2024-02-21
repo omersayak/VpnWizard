@@ -78,11 +78,11 @@ def connect_to_vpn(vpn_dir_path):
 if __name__ == "__main__":
     clear_screen()
     show_panel()
-    print("vpneasy is starting...")
+    print("vpnwizard is starting...")
     print("Only synchronized with VPNBook")
     time.sleep(1)
 
-    vpn_files_path = os.path.join(os.environ["HOME"], "vpneasy", "source")
+    vpn_files_path = os.path.join(os.environ["HOME"], "vpnwizard", "source")
 
     if os.path.exists(vpn_files_path):
         subprocess.call(f"rm -rf {vpn_files_path}", shell=True)
@@ -109,7 +109,7 @@ if __name__ == "__main__":
         while True:
             choice = input("Enter the number of your choice (enter '0' to Ctrl+C): ")
             if choice == '0':
-                print("Exiting vpneasy...")
+                print("Exiting vpnwizard...")
                 break
             elif choice.isdigit() and 1 <= int(choice) <= len(countries):
                 selected_country = countries[int(choice) - 1]
