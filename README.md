@@ -24,6 +24,8 @@ VpnWizard is a collection of Python scripts that allow you to manage your VPN co
 
        python vpnwizard.py
 
+   <img src="img/img.png">
+
 
 **Notes**:
 
